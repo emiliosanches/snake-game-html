@@ -1,0 +1,44 @@
+* {
+  box-sizing: content-box;
+}
+
+html, body {
+  display: flex;
+  flex: 1;
+  margin: 0; padding: 0;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center; justify-content: center;
+}
+
+#game-container {
+  width: 640px; height: 640px;
+  background: #DDD;
+  border: 1px solid #303030;
+  position: relative;
+}
+
+.snake-part {
+  width: 16px;
+  height: 16px;
+  background: rgb(199, 109, 13);
+  position: absolute;
+}
+
+.capture-point {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: blue;
+}
+
+#score-marker {
+  padding: 12px;
+  border-radius: 6px;
+  background: #AAA;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 32px;
+}
